@@ -6,7 +6,7 @@
         $connexion = new PDO("mysql:host=localhost;dbname=bootstrap;port=3306","root","");
         $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         if(!empty($email) && !empty($password)) {
-            $req = "";
+            $req = "SELECT * FROM users WHERE email = :email AND password = :password";
         }else{
             echo "Remplissez tous les champs";
         }
