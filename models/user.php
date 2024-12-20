@@ -1,6 +1,6 @@
 <?php
-require_once("database.php");
-include_once("../popup/popup.php");
+require_once "database.php";
+require_once "../popup/popup.php";
 
 class Users {
     private $db;

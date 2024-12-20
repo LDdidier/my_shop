@@ -3,7 +3,7 @@
 
 
 function popupSucces($NomUtilsateur){
-    echo "<div x-data='{ successModalIsOpen: true }'>
+    return "<div x-data='{ successModalIsOpen: true }'>
                             <div x-cloak x-show='successModalIsOpen' x-transition.opacity.duration.200ms x-trap.inert.noscroll='successModalIsOpen' @keydown.esc.window='successModalIsOpen = false' @click.self='successModalIsOpen = false' class='fixed inset-0 z-30 flex items-end justify-center bg-black/20 p-4 pb-8 backdrop-blur-md sm:items-center lg:p-8' role='dialog' aria-modal='true' aria-labelledby='successModalTitle'>
                                 <!-- Modal Dialog -->
                                 <div x-show='successModalIsOpen' x-transition:enter='transition ease-out duration-200 delay-100 motion-reduce:transition-opacity' x-transition:enter-start='opacity-0 scale-50' x-transition:enter-end='opacity-100 scale-100' class='flex max-w-lg flex-col gap-4 overflow-hidden rounded-md border border-neutral-300 bg-white text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300'>
@@ -32,7 +32,7 @@ function popupSucces($NomUtilsateur){
 }
 
 function popupUserExist(){
-    echo "<div x-data='{ dangerModalIsOpen: true }'>
+    return "<div x-data='{ dangerModalIsOpen: true }'>
     <div x-cloak x-show='dangerModalIsOpen' x-transition.opacity.duration.200ms x-trap.inert.noscroll='dangerModalIsOpen' @keydown.esc.window='dangerModalIsOpen = false' @click.self='dangerModalIsOpen = false' class='fixed inset-0 z-30 flex items-end justify-center bg-black/20 p-4 pb-8 backdrop-blur-md sm:items-center lg:p-8' role='dialog' aria-modal='true' aria-labelledby='dangerModalTitle'>
         <!-- Modal Dialog -->
         <div x-show='dangerModalIsOpen' x-transition:enter='transition ease-out duration-200 delay-100 motion-reduce:transition-opacity' x-transition:enter-start='opacity-0 scale-50' x-transition:enter-end='opacity-100 scale-100' class='flex max-w-lg flex-col gap-4 overflow-hidden rounded-md border border-neutral-300 bg-white text-neutral-600 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300'>
